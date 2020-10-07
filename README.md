@@ -52,8 +52,8 @@ f) Replace <TEMPORARY_ITEMS> with your own data:
 | `<AMI>` | replace <AMI> with the AWS AMI ID | https://cloud-images.ubuntu.com/locator/ec2/ |
 | `<REGION>` | replace it with your preferred region | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions |
 | `<TYPE>` | replace it with your preferred machine type | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes |
-| `<KEY>` | replace it with your SSH key name | ~/.ssh/... |
-| `<NAME>` | replace it with instance's name | |
+| `<KEY>` | replace it with your SSH key name | For example: ~/.ssh/... |
+| `<NAME>` | replace it with instance's name | For example: Terraform Ubuntu |
 
 
 
