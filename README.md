@@ -43,14 +43,14 @@ e) Open ec2.tf file with your preferred code editor
 
 f) Replace <PLACEHOLDERS> with your own data:
 
-| Item | Instructions | Further info |
+| Item | Instructions |
 | --- | --- | --- |
 | `KEY_NAME` | replace it with your SSH key name |
 
 
 g) Open provider.tf file
 
-| Item | Instructions | Further info |
+| Item | Instructions |
 | --- | --- | --- |
 | `PROFILE_NAME` | replace it with the profile name created in your laptop |
 
