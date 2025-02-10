@@ -45,14 +45,14 @@ f) Replace <PLACEHOLDERS> with your own data:
 
 | Item | Instructions | Further info |
 | --- | --- | --- |
-| `KEY_NAME` | replace it with your SSH key name | --- |
+| `KEY_NAME` | replace it with your SSH key name |
 
 
 g) Open provider.tf file
 
 | Item | Instructions | Further info |
 | --- | --- | --- |
-| `PROFILE_NAME` | replace it with the profile name created in your laptop | --- |
+| `PROFILE_NAME` | replace it with the profile name created in your laptop |
 
 
 h) Open terraform.tvars file
@@ -61,7 +61,7 @@ h) Open terraform.tvars file
 | Item | Instructions | Further info |
 | --- | --- | --- |
 | `REGION` | replace it with your preferred region | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions |
-| `YOUR_INTERNET_IP` | replace it with your Internet IP | --- |
+| `YOUR_INTERNET_IP` | replace it with your Internet IP | https://2ip.io/ |
 | `AMI` | replace it with the AWS AMI ID available in your preferred region | https://cloud-images.ubuntu.com/locator/ec2/ |
 | `t2.micro` | replace it with your preferred machine type | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes |
 
