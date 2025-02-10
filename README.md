@@ -1,9 +1,9 @@
-# Create Amazon AWS instance using Terraform
+# Create Amazon AWS EC2 instance using Terraform
 
 
 ## Description
 
-Create a "t2.micro" (1 CPU - 1GB RAM - 30GB SSD) Amazon AWS instance (Virtual Machine) running Ubuntu 20.04 using Terraform provisioning tool.
+Create a "t2.micro" (1 CPU - 1GB RAM - 30GB SSD) Amazon AWS instance (virtual machine) running Ubuntu 24.04 (LTS) using Terraform provisioning tool.
 
 
 
@@ -11,7 +11,7 @@ Create a "t2.micro" (1 CPU - 1GB RAM - 30GB SSD) Amazon AWS instance (Virtual Ma
 
 a) Amazon AWS account<br />
 b) Amazon AWS CLI tool already installed in your laptop and setup with your AWS account credentials<br />
-c) An Amazon AWS SSH key pair (.pem) on your laptop<br />
+c) An SSH key pair on your laptop<br />
 d) Terraform installed<br />
 
 
@@ -38,11 +38,7 @@ cd terraform-aws-instance
 ```
 
 
-e) Open terraform.tfvars file
-
-```
-nano terraform.tfvars
-```
+e) Open terraform.tfvars file with your preferred code editor
 
 
 f) Replace <TEMPORARY_ITEMS> with your own data:
@@ -64,28 +60,41 @@ terraform init
 ```
 
 
-h) Check for errors
+h) Format your code
+
+```
+terraform fmt
+```
+
+i) Validate your code
+
+```
+terraform validate
+```
+
+
+j) Run dry the script
 
 ```
 terraform plan
 ```
 
 
-i) Create instance
+k) Create instance
 
 ```
 terraform apply
 ```
 
 
-j) SSH into the newly created Amazon AWS instance
+l) SSH into the newly created Amazon AWS instance
 
 ```
-ssh -i ~/.ssh/<KEY_NAME>.pem ubuntu@`terraform output instance_public_ip`
+ssh -i ~/.ssh/KEY_NAME ubuntu@INSTANCE_IP
 ```
 
 
-k) If you want to delete the instance, use:
+m) If you want to delete the instance, use:
 
 ```
 terraform destroy
