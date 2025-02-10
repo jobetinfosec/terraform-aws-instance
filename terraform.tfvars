@@ -5,6 +5,6 @@ region = "REGION"
 ssh-ip = "YOUR_INTERNET_IP/32"
 
 # EC2
-ami  = "AMI"
+ami  = "AMI_ID"
 type = "t2.micro"
 name = "Development"

@@ -62,7 +62,7 @@ h) Open terraform.tvars file
 | --- | --- | --- |
 | `REGION` | replace it with your preferred region | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions |
 | `YOUR_INTERNET_IP` | replace it with your Internet IP | https://2ip.io/ |
-| `AMI` | replace it with the AWS AMI ID available in your preferred region | https://cloud-images.ubuntu.com/locator/ec2/ |
+| `AMI_ID` | replace it with the Ubuntu 24.04 LTS AMI ID available in your preferred region | https://cloud-images.ubuntu.com/locator/ec2/ |
 | `t2.micro` | replace it with your preferred machine type | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes |
 
 
