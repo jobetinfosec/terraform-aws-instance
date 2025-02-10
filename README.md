@@ -38,63 +38,77 @@ cd terraform-aws-instance
 ```
 
 
-e) Open terraform.tfvars file with your preferred code editor
+e) Open ec2.tf file with your preferred code editor
 
 
-f) Replace <TEMPORARY_ITEMS> with your own data:
+f) Replace <PLACEHOLDERS> with your own data:
 
 | Item | Instructions | Further info |
 | --- | --- | --- |
-| `<AMI>` | replace <AMI> with the AWS AMI ID | https://cloud-images.ubuntu.com/locator/ec2/ |
-| `<REGION>` | replace it with your preferred region | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions |
-| `<TYPE>` | replace it with your preferred machine type | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes |
-| `<KEY>` | replace it with your SSH key name | For example: ~/.ssh/... |
-| `<NAME>` | replace it with instance's name | For example: Terraform Ubuntu |
+| `KEY_NAME` | replace it with your SSH key name | --- |
+
+
+g) Open provider.tf file
+
+| Item | Instructions | Further info |
+| --- | --- | --- |
+| `PROFILE_NAME` | replace it with the profile name created in your laptop | --- |
+
+
+h) Open terraform.tvars file
+
+
+| Item | Instructions | Further info |
+| --- | --- | --- |
+| `REGION` | replace it with your preferred region | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions |
+| `YOUR_INTERNET_IP` | replace it with your Internet IP | --- |
+| `AMI` | replace it with the AWS AMI ID available in your preferred region | https://cloud-images.ubuntu.com/locator/ec2/ |
+| `t2.micro` | replace it with your preferred machine type | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes |
 
 
 
-g) Initialize Terraform
+i) Initialize Terraform
 
 ```
 terraform init
 ```
 
 
-h) Format your code
+j) Format your code
 
 ```
 terraform fmt
 ```
 
-i) Validate your code
+k) Validate your code
 
 ```
 terraform validate
 ```
 
 
-j) Run dry the script
+l) Run dry the script
 
 ```
 terraform plan
 ```
 
 
-k) Create instance
+m) Create instance
 
 ```
 terraform apply
 ```
 
 
-l) SSH into the newly created Amazon AWS instance
+n) SSH into the newly created Amazon AWS instance
 
 ```
 ssh -i ~/.ssh/KEY_NAME ubuntu@INSTANCE_IP
 ```
 
 
-m) If you want to delete the instance, use:
+o) If you want to delete the instance, use:
 
 ```
 terraform destroy
