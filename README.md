@@ -114,3 +114,6 @@ o) If you want to delete the instance, use:
 terraform destroy
 ```
 
+## License
+
+MIT license (see LICENSE file)
